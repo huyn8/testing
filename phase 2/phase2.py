@@ -56,7 +56,7 @@ import numpy as np
 df_copy = df.copy(deep=True)
 
 #Displaying the content the second treaty in the dataframe
-#Uncomment to see the data before cleaning
+# #Uncomment to see the data before cleaning
 # print('Before cleaning:')
 # print(df_copy.head(3))
 # print(df_copy.loc[1]['content'])
@@ -114,9 +114,9 @@ for stop_word in stop_words:
     df_copy['cleanedContent'] = df_copy['cleanedContent'].str.replace(regex_stopword, '')
 
 #Uncomment to see the data after cleaning
-# print('After cleaning:')
-# print(df_copy.head(3))
-# print(df_copy.loc[1]['cleanedContent'])
+print('After cleaning:')
+print(df_copy.head(3))
+print(df_copy.loc[1]['cleanedContent'])
 
 """
 DATA ANALYSIS
